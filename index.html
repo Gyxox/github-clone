@@ -4,8 +4,53 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		nav {
+			background: rgb(246, 248, 250); 
+			height: 48px; 
+			padding: 0 16px;
+			display: flex;
+			gap: 16px;
+			align-items: center;
+			color: rgb(31, 35, 40);
+			font-size: 14px;
+		}
+		nav > div {
+			padding: 0 8px;
+			display: flex;
+			align-items: center;
+		}
+		nav img {
+			height: 16px;
+			margin-right: 8px;
+		}
+		body {
+			margin: 0;
+			font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		}
+	</style>
 </head>
 <body>
-	
+	<nav>
+		<div>
+			<img src="./icons/code.svg" alt="">
+			<span>Code</span>
+		</div>
+		<div>
+			<img src="./icons/issues.svg" alt="">
+			<span>Issues</span>
+		</div>
+	</nav>
+	<main>
+		<div class="left-area">
+			<div class="tools-bar">
+			</div>
+			<div class="file-list">
+			</div>
+		</div>
+		<div class="right-area">
+		</div>
+	</main>
 </body>
 </html>
