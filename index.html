@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<title>GitHub Clone</title>
 	<style>
 		nav {
 			background: rgb(246, 248, 250); 
@@ -14,12 +13,12 @@
 			gap: 16px;
 			align-items: center;
 			color: rgb(31, 35, 40);
-			font-size: 14px;
 		}
 		nav > div {
 			padding: 0 8px;
 			display: flex;
 			align-items: center;
+			line-height: 30px;
 		}
 		nav img {
 			height: 16px;
@@ -27,7 +26,89 @@
 		}
 		body {
 			margin: 0;
+			font-size: 14px;
 			font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		}
+		nav > div:hover {
+  		background-color: #818b981a;
+  		cursor: pointer;
+			border-radius: 6px;
+		}
+		.tools-bar {
+			padding-top: 8px;
+			padding-bottom: 16px;
+			display:flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.tools-bar-right {
+			display:flex;
+			align-items: center;
+			gap:8px;
+		}
+		main {
+			display: flex;
+			margin: 0 95px;
+			padding: 0 32px;
+			gap: 20px;
+		}
+		.tools-bar img {
+			height: 16px;
+			margin-right: 8px;
+		}
+		.left-area {
+			margin: 16px 0;
+			flex: 1;
+		}
+		.right-area {
+			width: 296px;
+		}
+		.btn {
+			border: 1px solid rgb(209, 217, 224);
+			border-radius: 6px;
+			padding: 0 16px;
+			display: flex;
+			align-items: center;
+			line-height: 30px;
+			font-weight: 500;
+			font-size: 14px;
+		}
+		.primary {
+			background-color: rgb(31, 136, 61);
+			color: white;
+			border-color: rgba(31, 35, 40, 0.15);
+		}
+		.secondary {
+			background-color: rgb(246, 248, 250);
+		}
+		.secondary:hover {
+  		background-color: #818b981a;
+  		cursor: pointer;
+			border-radius: 6px;
+		}
+		.primary:hover {
+  		background-color: #1c8139;
+  		cursor: pointer;
+			border-radius: 6px;
+		}
+		.search-box {
+			position: relative;
+			display: flex;
+			align-items: center;
+			line-height: 30px;
+			font-weight: 500;
+			font-size: 14px;
+		}
+		.search-box input {
+			line-height: 30px;
+			padding: 0 8px;
+			padding-left: 35px;
+			border: 1px solid rgb(209, 217, 224);
+		  border-radius: 6px;
+		}
+		.search-box img {
+			position: absolute;
+			left: 12px;
 		}
 	</style>
 </head>
@@ -45,11 +126,27 @@
 	<main>
 		<div class="left-area">
 			<div class="tools-bar">
+				<button class="btn secondary">
+					<img src="./icons/master.svg" alt="">
+					<span>master</span>
+				</button>
+				<div class="tools-bar-right">
+					<div class="search-box">
+						<img src="./icons/search.svg" alt="">
+						<input placeholder="Go to file">
+						</input>
+					</div>
+					<button class="btn primary">
+						<img src="./icons/code-white.svg" alt="">
+						<span>Code</span>
+					</button>
+				</div>
 			</div>
 			<div class="file-list">
 			</div>
 		</div>
 		<div class="right-area">
+			About
 		</div>
 	</main>
 </body>
