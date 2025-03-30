@@ -110,6 +110,43 @@
 			position: absolute;
 			left: 12px;
 		}
+		.lst {
+			list-style: none;
+      padding: 0;
+      margin: 0;
+			font-size: 14px;
+		}
+		.first-line {
+			display: flex;
+			border-top: 1px solid rgb(209, 217, 224);
+			border-left: 1px solid rgb(209, 217, 224);
+			border-right: 1px solid rgb(209, 217, 224);
+		}
+		.second-line {
+			display: flex;
+			border-width: 1px;
+			border-color: rgb(209, 217, 224);
+			border-style: solid;
+		}
+		.left-column {
+			display: flex;
+			padding: 0 16px;
+			line-height: 41px;
+			width: 357.59px;
+			gap: 10px;
+		}
+		.mid-column {
+			display: flex;
+			padding-left: 16px;
+			line-height: 41px;
+			width: 385px;
+		}
+		.right-column {
+			display: flex;
+			padding: 0 16px;
+			line-height: 41px;
+		}
+
 	</style>
 </head>
 <body>
@@ -143,6 +180,24 @@
 				</div>
 			</div>
 			<div class="file-list">
+				<ul class="lst">
+					<li class="first-line">
+						<div class="left-column">
+							<img src="./icons/folder.svg" alt="">
+							.github
+						</div>
+						<div class="mid-column">Create FUNDING.yml</div>
+						<div class="right-column">5 years ago</div>
+					</li>
+					<li class="second-line">
+						<div class="left-column">
+							<img src="./icons/file.svg" alt="">
+							.gitignore
+						</div>
+						<div class="mid-column">new .gitignore</div>
+						<div class="right-column">8 years ago</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="right-area">
