@@ -37,12 +37,12 @@
 		.tools-bar {
 			padding-top: 8px;
 			padding-bottom: 16px;
-			display:flex;
+			display: flex;
 			align-items: center;
 			justify-content: space-between;
 		}
 		.tools-bar-right {
-			display:flex;
+			display: flex;
 			align-items: center;
 			gap:8px;
 		}
@@ -146,6 +146,59 @@
 			padding: 0 16px;
 			line-height: 41px;
 		}
+		.about {
+			margin-top: 12px;
+			padding-top: 16px;
+			color: rgb(31, 35, 40);
+			font-size: 16px;
+			font-weight: 600;
+			margin-bottom: 16px;
+			line-height: 24px;
+		}
+		.description {
+			margin: 16px 0;
+			font-size: 16px;
+			color: rgb(31, 35, 40);
+			line-height: 24px;
+		}
+		.link {
+			margin: 16px 0;
+			align-items: center;
+			color: rgb(9, 105, 218);
+			font-size: 14px;
+			display: flex;
+			line-height: 21px;
+			font-weight: 600;
+		}
+		.link:hover {
+			text-decoration: underline;
+		}
+		.link img {
+			margin-right: 8px;
+		}
+		.tags > span {
+			margin-right: 1.5px;
+			margin-bottom: 3.996px;
+			border: 1px;
+			padding: 0 10px;
+			background-color: rgb(221, 244, 255);
+			border-color: rgba(255, 255, 255, 0);
+			border-radius: 24px;
+			border-width: 1px;
+			border-style: solid;
+			color: rgb(9, 105, 218);
+			cursor: pointer;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 22px;
+			text-decoration-color: rgb(9, 105, 218);
+			text-decoration-style: solid;
+			display: inline-block;
+		}
+		.tags > span:hover {
+			color: #ffffff;
+			background-color: #0969da;
+		}
 
 	</style>
 </head>
@@ -201,7 +254,25 @@
 			</div>
 		</div>
 		<div class="right-area">
-			About
+			<div class="about">
+				About
+			</div>
+			<div class="description">
+				💄CSS tricks for web developers~
+			</div>
+			<div class="link">
+				<img src="./icons/link.svg" alt="">
+				lhammer.cn/You-need-to-know-css/
+			</div>
+			<div class="tags">
+				<span>css</span>
+				<span>css3</span>
+				<span>css-animations</span>
+				<span>cssnext</span>
+				<span>css-transitions</span>
+				<span>css-properties</span>
+				<span>docsify</span>
+			</div>
 		</div>
 	</main>
 </body>
